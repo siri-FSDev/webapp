@@ -1,0 +1,172 @@
+Scenario 1 :
+
+Airline crew  wants to record the passengers who have boarded the plane at the gate.
+
+Solution: 
+	   Object: Passengers
+
+	   Action: checkin the flight, scanning the boarding pass,Canceling the flight etc..
+
+	class Airlinecrew{
+				name;
+				reference;
+				time;
+				airways;
+				destination;
+
+				checkedin(){
+					console.log( 'passengers checked');
+						}
+			}
+var p = new Airlinecrew;
+      p.name = 'john';
+     p.reference = '234';
+     p.time='10:20';
+     p.airways= 'southwest';
+    p.destination= 'Texas';
+    console.log(p);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scenario 2:
+
+Ordering a pizza online.
+
+Solution:  
+	     Object : Pizza
+	    Properties: size,type of pizza,toppings.
+	    Action: making a payment,pickup, delivery etc.
+
+
+
+class pizzaMaker{
+    size;
+    typeofpizza;
+	toppings;
+	shape;
+		
+	}
+var p = new pizzaMaker;
+    p.size= 'large';
+    p.typeofpizza = 'pan pizza';
+    p.toppings ={'cheese':'veggie'};
+    p.shape= 'round';
+    
+	console.log(p);
+
+
+Scenario 3:
+
+Operating the mobile.
+
+Solution:
+  	   Object : mobile
+	    Properties: color,model,size,price
+	    Action: making calls,listing to music,playing games etc.
+
+
+
+class mobile{
+    color;
+    model;
+    price;
+    ram;
+
+		
+	}
+var p = new mobile;
+    p.color= 'red';
+    p.model = 'iphone max';
+    p.price = '$1200'
+    p.ram= '64';
+    
+	console.log(p);
+
+Scenario 4:
+
+With drawing amount from an ATM.
+
+Solution:	object: ATM
+		properties: bank account,card,machine.
+		Action: withdrawing amount,Doing deposits,checking the balance.
+
+class ATM{
+    bankAccount;
+    card;
+    location;
+    
+
+		
+	}
+var p = new ATM;
+    p.bankAccount= 'Axis';
+    p.card = '1234556';
+    p.location = 'andermil road'
+    
+    
+	console.log(p);
+
+Scenario 5: 
+Creating an email account.
+Solution:   object: User
+	     properties: user id, password,gender,contact.
+	     Action: Login in to account,Logoff,sending emails etc.
+
+
+
+class email{
+    Userid:string;
+    password : [string,number];
+    gender:String;
+    contact:number;
+    credentials: boolean;
+    loginsuccess(){
+        this.credentials =true;
+    }
+
+    loginfailure(){
+        this.credentials =false;
+    }
+     sendemail(){
+
+        console.log('Thankyou for registering' + this.credentials);
+     }
+     
+		
+	}
+var account = new email;
+account.Userid='welcome.ts';
+account.password =['sss,123',124];
+account.contact=123444;
+account.gender='F';
+console.log(account);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
